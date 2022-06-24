@@ -1,0 +1,22 @@
+//Write a complete class called Box that represents a cardboard box with dimensions of length, width, and height. 
+//Include a constructor that has three int parameters names length, width, and height for the three dimensions, 
+//and a getVolume method that returns an int with the calculated volume of the box (length x width x height).
+
+//Answer
+public class Box
+{
+    private int length;
+    private int width;
+    private int height;
+
+    public Box (int length, int width, int height)
+    {
+        this.length = length;
+        this.width = width;
+        this.height = height;
+    }
+    public int getVolume()
+    {
+         return (this.length * this.width * this.height);
+    }
+}
