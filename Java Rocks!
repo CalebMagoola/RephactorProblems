@@ -1,0 +1,4 @@
+//Write a println statement that produces the following output: "Java Rocks!"
+
+//Answer
+System.out.println("Java rocks!");
