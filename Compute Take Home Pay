@@ -1,0 +1,44 @@
+//Write a method called computePay that accepts arguments representing the hourly wage of an employee (a double) 
+//and the number of hours that employee worked this week (an int) in that order. 
+//The method should return the take home pay owed to the employee as a double value.
+//The normal work week is 40 hours, and the company pays employees "time and a half" for overtime. 
+//So, the total wages is the sum of regular wages and overtime wages. 
+//Regular wages are the hours worked (up to 40) times the hourly wage. 
+//Overtime wages are any hours over 40 times the hourly wage times 1.5.
+//The employee's take home pay is the total wages minus taxes and medical costs. 
+//Taxes are 20% of the total wages, and medical costs are 10% of the total wages.
+//Suppose an employee makes $12.25 per hour and has worked 45 hours this week. 
+//The take home pay for that employee is 40 hours times 12.25, plus 5 hours times 18.375 (time-and-a-half), minus taxes and medical, for a total of $407.31.
+
+
+
+//////////////////////
+//Answer
+public double computePay(double wage, int hours)
+{
+    double total = 0;
+    double pay = 0;
+    double medical = 0;
+    double taxes = 0;
+    double extra = 0;
+    double x = 0;
+    if (hours <= 40)
+        {
+            total = wage * hours;
+            medical = total * 0.1;
+            taxes = total * 0.2;
+            pay = total - taxes - medical;
+            return pay;
+        }
+    else
+        {
+            extra = (double)(hours - 40);
+            hours = 40;
+            x = wage * 1.5;
+            total = (wage * hours) + (extra * x);
+            medical = total * 0.1;
+            taxes = total * 0.2;
+            pay = total - taxes - medical;
+            return pay;
+        }
+}
