@@ -1,0 +1,32 @@
+/////////////////////
+//Question
+
+Write a complete class called TreasureChest that stores an int variable called gold as instance data. 
+Include a constructor that gives an initial value to gold using a parameter value, as well as classic setter and getter methods for gold. 
+Also include a toString method that returns a description in the form "This chest contains 20 gold pieces!" using the current gold value.
+
+///////////////////////
+//Answer
+
+public class TreasureChest{
+    private int gold;
+   
+    public TreasureChest(){
+        gold = 0;
+    }
+    public TreasureChest(int g){
+        this.gold = g;
+    }
+    
+    public int getGold(){
+        return gold;
+    }
+    
+    public void setGold(int g){
+        gold = g;
+    }
+
+    public String toString(){
+        return "This chest contains " + getGold() + " gold pieces!";
+    }
+}
