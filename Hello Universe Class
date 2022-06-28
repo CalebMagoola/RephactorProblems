@@ -1,0 +1,14 @@
+///////////////
+//Question
+Create a class called HelloUniverse that has a main method that prints Hello Universe!.
+
+//////////////////////
+//Answer
+
+public class HelloUniverse
+{
+    public static void main (String [] args)
+    {
+    System.out.println("Hello Universe!");
+    }
+}
