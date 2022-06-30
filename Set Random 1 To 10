@@ -1,0 +1,7 @@
+Create a Random object named generator, then declare an integer variable named num 
+and set it to a random integer between 1 and 10, inclusive. 
+Assume that the Random class has already been imported.
+
+//////////////////
+Random generator = new Random();
+int num = generator.nextInt(10) + 1;
