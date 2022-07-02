@@ -1,0 +1,5 @@
+Declare an integer variable named cost and assign it the value held in the floating-point variable price, 
+truncating the fractional part. Assume that price has been declared and initialized.
+
+////////////////////////////////////////
+int cost = (int) price;
