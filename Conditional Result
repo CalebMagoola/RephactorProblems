@@ -1,0 +1,9 @@
+Write code that sets the value of a variable named result to the sum of the values 
+in the variables num1 and num2, unless that sum is in the range 20 to 30, inclusive, in which case set result to 0. 
+Assume all variables have been declared and that num1 and num2 already have values. 
+Use only one if statement in your solution.
+/////////////////////
+if (num1 + num2 >= 20 && num1 + num2 <= 30)
+    result = 0;
+else
+    result = num1 + num2;
